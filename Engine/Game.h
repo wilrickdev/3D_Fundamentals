@@ -23,6 +23,7 @@
 #include "Graphics.h"
 #include "PubeScreenTransformer.h"
 #include "Cube.h"
+#include "Pyramid.h"
 
 class Game
 {
@@ -44,6 +45,7 @@ private:
 	/*  User Variables              */
 	PubeScreenTransformer pst;
 	Cube cube;
+	Pyramid pyramid;
 	static constexpr float dTheta = PI;
 	float theta_x = 0.0f;
 	float theta_y = 0.0f;

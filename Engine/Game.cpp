@@ -26,7 +26,8 @@ Game::Game( MainWindow& wnd )
 	:
 	wnd( wnd ),
 	gfx( wnd ),
-	cube( 1.0f )
+	cube( 1.0f ),
+	pyramid(1.0f)
 {
 }
 
@@ -69,7 +70,7 @@ void Game::UpdateModel()
 
 void Game::ComposeFrame()
 {
-	auto lines = cube.GetLines();
+	auto lines = pyramid.GetLines();
 	const Mat3 rot =
 		Mat3::RotationX( theta_x ) *
 		Mat3::RotationY( theta_y ) *
